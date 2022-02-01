@@ -1,7 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import { ButtonProps } from "./button.types";
+export interface ButtonProps {
+  text?: string;
+  primary?: boolean;
+  disabled?: boolean;
+  size?: "small" | "medium" | "large";
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+}
 
 const StyledButton = styled.button<ButtonProps>`
   border: 0;

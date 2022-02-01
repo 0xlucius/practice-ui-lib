@@ -2,11 +2,13 @@
   "name": "browk-ui",
   "version": "1.0.0",
   "description": "ui-kit based on Browk's design on figma",
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js, jsx, ts, tsx\"",
-    "lint": "eslint \"src/**/*.{js, jsx, ts, tsx\" --quiet"
+    "lint": "eslint \"src/**/*.{js, jsx, ts, tsx\" --quiet",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
